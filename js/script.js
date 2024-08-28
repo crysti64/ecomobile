@@ -82,7 +82,7 @@ $(function () {
 		$('.my__main2').css({
 			"height": "100%"
 		});
-		$('.my_tab li a').text($(window).height());
+		$('.my_tab li a').html($(window).height());
 	} else {
 		$('.my__main2').css({
 			"height": "calc(100vh - 90px)",
