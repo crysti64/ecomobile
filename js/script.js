@@ -82,20 +82,24 @@ $(function () {
 		$('.my__main2').css({
 			"height": "100%"
 		});
+		$('.acitive_wrap').css('margin-bottom', '65px')
 	} else {
 		$('.my__main2').css({
 			"height": "calc(100vh - 90px)",
 		});
+		$('.acitive_wrap').css('margin-bottom', '0')
 	}
 	$(window).resize(function () {
 		if ($(window).height() < 739) {
 			$('.my__main2').css({
 				"height": "100%"
 			});
+			$('.acitive_wrap').css('margin-bottom', '65px')
 		} else {
 			$('.my__main2').css({
 				"height": "calc(100vh - 90px)",
 			});
+			$('.acitive_wrap').css('margin-bottom', '0')
 		}
 	});
 
