@@ -755,6 +755,7 @@
 .up_modal.type2 {
 	border-radius: 0;
 	height: 100%;
+	min-height: 100vh;
 }
 
 .modal_search {
