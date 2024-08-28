@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>BigTeam</title>
+	<link rel="stylesheet" href="../css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../css/jquery.modal.min.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<script src="../js/jquery-2.2.4.min.js"></script>
+	<script src="../js/jquery.modal.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/swiper-bundle.min.js"></script>
+	<script defer src="../js/script.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div class="inner">
+			<header class="r__header">
+				<button class="btn_back"><span class="blind">뒤로</span></button>
+				<h1>챌린지 선택</h1>
+			</header>
+			<main class="r__main hid">
+				<div class="chall_choice">
+					<ul>
+						<li class="on">
+							<a href="#">
+								<i><img src="../images/ico_chall_1.png" alt=""></i>
+								<span>일상생활</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i><img src="../images/ico_chall_2.png" alt=""></i>
+								<span>빈그릇 인증</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i><img src="../images/ico_chall_3.png" alt=""></i>
+								<span>대중교통</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i><img src="../images/ico_chall_4.png" alt=""></i>
+								<span>개인 텀블러</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i><img src="../images/ico_chall_5.png" alt=""></i>
+								<span>라벨지 떼기</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i><img src="../images/ico_chall_6.png" alt=""></i>
+								<span>장바구니</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i><img src="../images/ico_chall_7.png" alt=""></i>
+								<span>코드뽑기</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i><img src="../images/ico_chall_8.png" alt=""></i>
+								<span>개인용기 포장</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i><img src="../images/ico_chall_9.png" alt=""></i>
+								<span>업사이클링</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i><img src="../images/ico_chall_10.png" alt=""></i>
+								<span>나가기</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="btn_upload">
+					<button class="upload" onclick="show('modalAlarm')">업로드하기</button>
+				</div>
+			</main>
+		</div>
+	</div>
+
+	<!-- modal -->
+	<div class="modal" id="modalAlarm">
+		<div class="modal_body">
+			<div class="modal_header">
+				<h3>알림</h3>
+			</div>
+			<div class="modal_inner">
+				<div class="modal_p">본인이 직접 촬영하거나 <br>
+					제작한 게시물이 아닐 경우,<br>
+					마일리지 환수 등 불이익을 받을 수 있습니다.</div>
+
+				<div class="modal_button">
+					<a href="#" class="bg_gray">등록취소</a>
+					<a href="#close-modal" rel="modal:close" class="bg_green">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
