@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>BigTeam</title>
+	<link rel="stylesheet" href="../css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../css/jquery.modal.min.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<script src="../js/jquery-2.2.4.min.js"></script>
+	<script src="../js/jquery.modal.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/swiper-bundle.min.js"></script>
+	<script defer src="../js/script.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div class="inner">
+			<header class="my__header">
+				<div class="bg">
+					<ul class="header_icon">
+						<li><a href="900_setting.html"><span class="blind">설정</span></a></li>
+						<li class="on"><a href="700_alarm.html"><span class="blind">알림</span></a></li>
+						<li><a href="700_alarm.html"><span class="blind">메뉴</span></a></li>
+					</ul>
+					<div class="my_info">
+						<div class="info">
+							<i class="profile"></i>
+							<strong>김태희</strong>
+							<span>님의 에코 마일리지</span>
+						</div>
+						<a href="520_activity.html" class="mile">
+							<strong>32,200</strong>
+							<span>EP</span>
+						</a>
+					</div>
+				</div>
+			</header>
+			<main class="my__main pl16 pr16">
+				<ul class="my_tab">
+					<li class="on"><a href="500_mypage.html">내 게시물</a></li>
+					<li><a href="510_challenge.html">내 챌린지</a></li>
+					<li><a href="520_activity.html">내 활동</a></li>
+				</ul>
+
+				<div class="my_board">
+					<h3 class="date">오늘</h3>
+					<div class="feed_list mypage">
+						<div class="feed_box">
+							<span class="img"><img src="../images/main_img.jpg" alt=""></span>
+							<div class="info_1">
+								<div class="icons">
+									<span class="feed_like">15</span>
+									<a href="010_reply.html" class="ico_reply"><span class="blind">답변</span></a>
+									<a href="#none" class="ico_more"><span class="blind">더보기</span></a>
+								</div>
+								<div class="show_menu">
+									<a href="#none">삭제하기</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="feed_box">
+							<span class="img"><img src="../images/main_img.jpg" alt=""></span>
+							<div class="info_1">
+								<div class="icons">
+									<span class="feed_like">15</span>
+									<a href="010_reply.html" class="ico_reply"><span class="blind">답변</span></a>
+									<a href="#none" class="ico_more"><span class="blind">더보기</span></a>
+								</div>
+								<div class="show_menu">
+									<a href="#none">삭제하기</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h3 class="date">어제</h3>
+					<div class="feed_list mypage">
+						<div class="feed_box">
+							<span class="img"><img src="../images/main_img.jpg" alt=""></span>
+							<div class="info_1">
+								<div class="icons">
+									<span class="feed_like">15</span>
+									<a href="010_reply.html" class="ico_reply"><span class="blind">답변</span></a>
+									<a href="#none" class="ico_more"><span class="blind">더보기</span></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="feed_box">
+							<span class="img"><img src="../images/main_img.jpg" alt=""></span>
+							<div class="info_1">
+								<div class="icons">
+									<span class="feed_like">15</span>
+									<a href="010_reply.html" class="ico_reply"><span class="blind">답변</span></a>
+									<a href="#none" class="ico_more"><span class="blind">더보기</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="m__footer">
+				<ul class="footer_menu">
+					<li class="home">
+						<a href="000_index.html">
+							<span class="ico"></span>
+							<span class="txt">HOME</span>
+						</a>
+					</li>
+					<li class="education">
+						<a href="200_education.html">
+							<span class="ico"></span>
+							<span class="txt">education</span>
+						</a>
+					</li>
+					<li class="add">
+						<a href="300_add.html">
+							<span class="blind">추가하기</span>
+						</a>
+					</li>
+					<li class="event">
+						<a href="400_event.html">
+							<span class="ico"></span>
+							<span class="txt">event</span>
+						</a>
+					</li>
+					<li class="mypage on">
+						<a href="500_mypage.html">
+							<span class="ico"></span>
+							<span class="txt">my page</span>
+						</a>
+					</li>
+				</ul>
+			</footer>
+		</div>
+	</div>
+
+	<!-- modal -->
+	<div class="modal" id="modalReport">
+		<div class="modal_body">
+			<div class="modal_header">
+				<h3>신고하기</h3>
+				<a href="#close-modal" rel="modal:close" class="btn_close">확인</a>
+			</div>
+			<div class="modal_inner">
+				<div class="report_list">
+					<p class="check">
+						<input type="radio" id="report_1" name="reportList">
+						<label for="report_1">음란성 게시물</label>
+					</p>
+					<p class="check">
+						<input type="radio" id="report_2" name="reportList">
+						<label for="report_2">폭력적 또는 불쾌한 게시물</label>
+					</p>
+					<p class="check">
+						<input type="radio" id="report_3" name="reportList">
+						<label for="report_3">스팸 게시물</label>
+					</p>
+					<p class="check">
+						<input type="radio" id="report_4" name="reportList">
+						<label for="report_4">사생활 침해/개인정보 유출 게시물</label>
+					</p>
+					<p class="check">
+						<input type="radio" id="report_5" name="reportList">
+						<label for="report_5">불법적인 게시물</label>
+					</p>
+
+					<textarea name="" id="" placeholder="해당 신고의 상세사유(선택사항)" class="mt20"></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

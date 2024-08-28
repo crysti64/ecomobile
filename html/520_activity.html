@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>BigTeam</title>
+	<link rel="stylesheet" href="../css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../css/jquery.modal.min.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<script src="../js/jquery-2.2.4.min.js"></script>
+	<script src="../js/jquery.modal.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/swiper-bundle.min.js"></script>
+	<script defer src="../js/script.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div class="inner">
+			<header class="my__header">
+				<div class="bg">
+					<ul class="header_icon">
+						<li><a href="900_setting.html"><span class="blind">설정</span></a></li>
+						<li class="on"><a href="700_alarm.html"><span class="blind">알림</span></a></li>
+						<li><a href="700_alarm.html"><span class="blind">메뉴</span></a></li>
+					</ul>
+					<div class="my_info">
+						<div class="info">
+							<i class="profile"></i>
+							<strong>김태희</strong>
+							<span>님의 에코 마일리지</span>
+						</div>
+						<div class="mile">
+							<strong>32,200</strong>
+							<span>EP</span>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="my__main">
+				<ul class="my_tab pl16 pr16">
+					<li><a href="500_mypage.html">내 게시물</a></li>
+					<li><a href="510_challenge.html">내 챌린지</a></li>
+					<li class="on"><a href="520_activity.html">내 활동</a></li>
+				</ul>
+
+				<div class="acitive_wrap">
+					<div class="my_active">
+						<div class="visit_num">
+							<strong>221</strong>
+							<span>방문수</span>
+						</div>
+						<div class="mile_wrap">
+							<p class="num">
+								<strong>11500 </strong>
+								<b>32200</b>
+							</p>
+							<span class="mile">마일리지</span>
+							<span class="mile_box">현재 / 누적 마일리지입니다.</span>
+						</div>
+					</div>
+
+					<div class="my_mileage_use">
+						<div class="header d-flex">
+							<h3>마일리지 사용 내역</h3>
+							<a href="#none" onclick="showSearch2('mileUse')">전체보기</a>
+						</div>
+						<ul class="list">
+							<li>
+								<i class="ico"><img src="../images/ico_edu.png" alt=""></i>
+								<p class="info">
+									<strong>출석체크</strong>
+									<span>2022.05.06 14.20</span>
+								</p>
+								<span class="num">+20</span>
+							</li>
+							<li>
+								<i class="ico"><img src="../images/ico_edu_2.png" alt=""></i>
+								<p class="info">
+									<strong>마일리지 전환</strong>
+									<span>2022.05.06 14.20</span>
+								</p>
+								<span class="num">-100</span>
+							</li>
+							<li>
+								<i class="ico"><img src="../images/ico_edu.png" alt=""></i>
+								<p class="info">
+									<strong>영상시청</strong>
+									<span>2022.05.06 14.20</span>
+								</p>
+								<span class="num">+20</span>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</main>
+			<button class="mileage_chang" onclick="showSearch2('mileChange')">마일리지 전환하기</button>
+			<footer class="m__footer">
+				<ul class="footer_menu">
+					<li class="home">
+						<a href="000_index.html">
+							<span class="ico"></span>
+							<span class="txt">HOME</span>
+						</a>
+					</li>
+					<li class="education">
+						<a href="200_education.html">
+							<span class="ico"></span>
+							<span class="txt">education</span>
+						</a>
+					</li>
+					<li class="add">
+						<a href="300_add.html">
+							<span class="blind">추가하기</span>
+						</a>
+					</li>
+					<li class="event">
+						<a href="400_event.html">
+							<span class="ico"></span>
+							<span class="txt">event</span>
+						</a>
+					</li>
+					<li class="mypage on">
+						<a href="500_mypage.html">
+							<span class="ico"></span>
+							<span class="txt">my page</span>
+						</a>
+					</li>
+				</ul>
+			</footer>
+		</div>
+	</div>
+
+
+	<!-- modal -->
+	<div class="modal" id="modalAlarm">
+		<div class="modal_body">
+			<div class="modal_header">
+				<h3>전환대상이 아닙니다.</h3>
+			</div>
+			<div class="modal_inner">
+				<div class="modal_p">20000 마일리지 이하 보유자는
+					마일리지 전환이 불가능합니다.</div>
+
+				<div class="modal_button">
+					<a href="#close-modal" rel="modal:close" class="bg_gray wd100">닫기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- modal -->
+	<div class="up_modal type2" id="mileChange">
+		<div class="modal_close2"></div>
+		<div class="modal_mileage">
+			<div class="mileage__header">
+				<h2>마일리지 전환</h2>
+			</div>
+
+			<div class="mileage__body">
+				<div class="mile_change_wrap">
+					<ul class="list">
+						<li class="on"><a href="#">봉사 인증</a></li>
+						<li><a href="#">교육시간 인증</a></li>
+						<li><a href="#">지역사랑 상품권 전환</a></li>
+					</ul>
+
+					<div class="mile_jumin">
+						<strong>마일리지 전환신청자 주민등록번호 <span class="c_red">*</span></strong>
+						<div class="d-flex jumin_form">
+							<p>
+								<label for="">주민등록번호 앞자리</label>
+								<input type="text" value="0000000">
+							</p>
+							<span>-</span>
+							<p>
+								<label for="">주민등록번호 뒷자리</label>
+								<input type="password" value="000000">
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<button class="btn change" onclick="show('modalAlarm')">전환 신청하기</button>
+		</div>
+	</div>
+
+	<!-- modal -->
+	<div class="up_modal type2" id="mileUse">
+		<div class="modal_close2"></div>
+		<div class="modal_mileage">
+			<div class="mileage__header">
+				<h2>마일리지 사용 내역</h2>
+			</div>
+
+			<div class="mileage__body">
+				<div class="mileage_use_list">
+					<div class="mileage_mount">
+						<p class="now">
+							<span>현재 마일리지</span>
+							<strong>11,500 <i>EP</i></strong>
+						</p>
+						<p class="all">
+							<span>누적 마일리지</span>
+							<strong>32,200 <i>EP</i></strong>
+						</p>
+					</div>
+
+					<div class="my_mileage_use in_modal">
+						<div class="mileage_sort">
+							<p class="lft">
+								<a href="#" class="on">전체</a>
+								<a href="#">적립</a>
+								<a href="#">사용</a>
+							</p>
+							<p class="rgt">
+								<select name="" id="" class="round">
+									<option value="">1개월</option>
+									<option value="">3개월</option>
+									<option value="">6개월</option>
+									<option value="">1년</option>
+								</select>
+							</p>
+						</div>
+						<div class="mile_scroll">
+							<ul class="list">
+								<li>
+									<i class="ico"><img src="../images/ico_edu.png" alt=""></i>
+									<p class="info">
+										<strong>출석체크</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">+20</span>
+								</li>
+								<li>
+									<i class="ico"><img src="../images/ico_edu_2.png" alt=""></i>
+									<p class="info">
+										<strong>마일리지 전환</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">-100</span>
+								</li>
+								<li>
+									<i class="ico"><img src="../images/ico_edu.png" alt=""></i>
+									<p class="info">
+										<strong>영상시청</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">+20</span>
+								</li>
+								<li>
+									<i class="ico"><img src="../images/ico_edu.png" alt=""></i>
+									<p class="info">
+										<strong>출석체크</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">+20</span>
+								</li>
+								<li>
+									<i class="ico"><img src="../images/ico_edu_2.png" alt=""></i>
+									<p class="info">
+										<strong>마일리지 전환</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">-100</span>
+								</li>
+								<li>
+									<i class="ico"><img src="../images/ico_edu.png" alt=""></i>
+									<p class="info">
+										<strong>영상시청</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">+20</span>
+								</li>
+								<li>
+									<i class="ico"><img src="../images/ico_edu.png" alt=""></i>
+									<p class="info">
+										<strong>출석체크</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">+20</span>
+								</li>
+								<li>
+									<i class="ico"><img src="../images/ico_edu_2.png" alt=""></i>
+									<p class="info">
+										<strong>마일리지 전환</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">-100</span>
+								</li>
+								<li>
+									<i class="ico"><img src="../images/ico_edu.png" alt=""></i>
+									<p class="info">
+										<strong>영상시청</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">+20</span>
+								</li>
+								<li>
+									<i class="ico"><img src="../images/ico_edu.png" alt=""></i>
+									<p class="info">
+										<strong>출석체크</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">+20</span>
+								</li>
+								<li>
+									<i class="ico"><img src="../images/ico_edu_2.png" alt=""></i>
+									<p class="info">
+										<strong>마일리지 전환</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">-100</span>
+								</li>
+								<li>
+									<i class="ico"><img src="../images/ico_edu.png" alt=""></i>
+									<p class="info">
+										<strong>영상시청</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">+20</span>
+								</li>
+								<li>
+									<i class="ico"><img src="../images/ico_edu.png" alt=""></i>
+									<p class="info">
+										<strong>출석체크</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">+20</span>
+								</li>
+								<li>
+									<i class="ico"><img src="../images/ico_edu_2.png" alt=""></i>
+									<p class="info">
+										<strong>마일리지 전환</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">-100</span>
+								</li>
+								<li>
+									<i class="ico"><img src="../images/ico_edu.png" alt=""></i>
+									<p class="info">
+										<strong>영상시청</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">+20</span>
+								</li>
+								<li>
+									<i class="ico"><img src="../images/ico_edu.png" alt=""></i>
+									<p class="info">
+										<strong>출석체크</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">+20</span>
+								</li>
+								<li>
+									<i class="ico"><img src="../images/ico_edu_2.png" alt=""></i>
+									<p class="info">
+										<strong>마일리지 전환</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">-100</span>
+								</li>
+								<li>
+									<i class="ico"><img src="../images/ico_edu.png" alt=""></i>
+									<p class="info">
+										<strong>영상시청</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">+20</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+</body>
+
+</html>
