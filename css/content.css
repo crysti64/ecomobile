@@ -1186,3 +1186,10 @@
 .chall_choice ul li.on img {
 	filter: invert(27%) sepia(80%) saturate(5211%) hue-rotate(142deg) brightness(93%) contrast(101%);
 }
+
+.acitive_wrap {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}

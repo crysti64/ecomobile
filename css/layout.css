@@ -151,6 +151,11 @@
 	padding: 110px 0 65px;
 }
 
+.my__main2 {
+	height: calc(100vh - 90px);
+	padding: 110px 0 0;
+}
+
 
 .profile_list {
 	display: flex;
