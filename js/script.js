@@ -81,7 +81,7 @@ $(function () {
 	if ($(window).height() < 739) {
 		$('.my__main').css({
 			"height": "auto",
-			"padding-bottom": "180px"
+			"padding-bottom": "80px"
 		});
 		$('.mileage_chang').css('margin-bottom', '65px');
 	} else {
@@ -94,7 +94,7 @@ $(function () {
 		if ($(window).height() < 739) {
 			$('.my__main').css({
 				"height": "auto",
-				"padding-bottom": "180px"
+				"padding-bottom": "80px"
 			});
 			$('.mileage_chang').css('margin-bottom', '65px');
 		} else {
