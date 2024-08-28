@@ -152,7 +152,7 @@
 }
 
 .my__main2 {
-	height: calc(100vh - 90px);
+	height: calc(100% - 166px);
 	padding: 110px 0 0;
 }
 
