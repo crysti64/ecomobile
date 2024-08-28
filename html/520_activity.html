@@ -40,7 +40,7 @@
 					</div>
 				</div>
 			</header>
-			<main class="my__main">
+			<main class="my__main2">
 				<ul class="my_tab pl16 pr16">
 					<li><a href="500_mypage.html">내 게시물</a></li>
 					<li><a href="510_challenge.html">내 챌린지</a></li>
@@ -48,57 +48,59 @@
 				</ul>
 
 				<div class="acitive_wrap">
-					<div class="my_active">
-						<div class="visit_num">
-							<strong>221</strong>
-							<span>방문수</span>
+					<div>
+						<div class="my_active">
+							<div class="visit_num">
+								<strong>221</strong>
+								<span>방문수</span>
+							</div>
+							<div class="mile_wrap">
+								<p class="num">
+									<strong>11500 </strong>
+									<b>32200</b>
+								</p>
+								<span class="mile">마일리지</span>
+								<span class="mile_box">현재 / 누적 마일리지입니다.</span>
+							</div>
 						</div>
-						<div class="mile_wrap">
-							<p class="num">
-								<strong>11500 </strong>
-								<b>32200</b>
-							</p>
-							<span class="mile">마일리지</span>
-							<span class="mile_box">현재 / 누적 마일리지입니다.</span>
+
+						<div class="my_mileage_use">
+							<div class="header d-flex">
+								<h3>마일리지 사용 내역</h3>
+								<a href="#none" onclick="showSearch2('mileUse')">전체보기</a>
+							</div>
+							<ul class="list">
+								<li>
+									<i class="ico"><img src="../images/ico_edu.png" alt=""></i>
+									<p class="info">
+										<strong>출석체크</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">+20</span>
+								</li>
+								<li>
+									<i class="ico"><img src="../images/ico_edu_2.png" alt=""></i>
+									<p class="info">
+										<strong>마일리지 전환</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">-100</span>
+								</li>
+								<li>
+									<i class="ico"><img src="../images/ico_edu.png" alt=""></i>
+									<p class="info">
+										<strong>영상시청</strong>
+										<span>2022.05.06 14.20</span>
+									</p>
+									<span class="num">+20</span>
+								</li>
+							</ul>
 						</div>
 					</div>
 
-					<div class="my_mileage_use">
-						<div class="header d-flex">
-							<h3>마일리지 사용 내역</h3>
-							<a href="#none" onclick="showSearch2('mileUse')">전체보기</a>
-						</div>
-						<ul class="list">
-							<li>
-								<i class="ico"><img src="../images/ico_edu.png" alt=""></i>
-								<p class="info">
-									<strong>출석체크</strong>
-									<span>2022.05.06 14.20</span>
-								</p>
-								<span class="num">+20</span>
-							</li>
-							<li>
-								<i class="ico"><img src="../images/ico_edu_2.png" alt=""></i>
-								<p class="info">
-									<strong>마일리지 전환</strong>
-									<span>2022.05.06 14.20</span>
-								</p>
-								<span class="num">-100</span>
-							</li>
-							<li>
-								<i class="ico"><img src="../images/ico_edu.png" alt=""></i>
-								<p class="info">
-									<strong>영상시청</strong>
-									<span>2022.05.06 14.20</span>
-								</p>
-								<span class="num">+20</span>
-							</li>
-						</ul>
-					</div>
-
+					<button class="mileage_chang" onclick="showSearch2('mileChange')">마일리지 전환하기</button>
 				</div>
 			</main>
-			<button class="mileage_chang" onclick="showSearch2('mileChange')">마일리지 전환하기</button>
 			<footer class="m__footer">
 				<ul class="footer_menu">
 					<li class="home">
