@@ -987,7 +987,7 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 16px;
-	height: 100vh;
+	height: 100dvh;
 }
 
 .profile_regist .profile_img .img {
