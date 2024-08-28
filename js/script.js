@@ -85,7 +85,7 @@ $(function () {
 		$('.acitive_wrap').css('margin-bottom', '65px')
 	} else {
 		$('.my__main2').css({
-			"height": "calc(100vh - 90px)",
+			"height": "calc(100vh - 165px)",
 		});
 		$('.acitive_wrap').css('margin-bottom', '0')
 	}
@@ -97,7 +97,7 @@ $(function () {
 			$('.acitive_wrap').css('margin-bottom', '65px')
 		} else {
 			$('.my__main2').css({
-				"height": "calc(100vh - 90px)",
+				"height": "calc(100vh - 165px)",
 			});
 			$('.acitive_wrap').css('margin-bottom', '0')
 		}
