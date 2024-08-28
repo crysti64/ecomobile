@@ -147,7 +147,7 @@
 }
 
 .my__main {
-	height: calc(100vh - 166px);
+	height: calc(100% - 166px);
 	padding: 110px 0 65px;
 }
 
