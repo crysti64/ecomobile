@@ -23,6 +23,7 @@ function showSearch2(id) {
 
 
 $(function () {
+
 	$('.ico_more').click(function () {
 		$(this).parent().siblings('.show_menu').show();
 	})
@@ -77,7 +78,7 @@ $(function () {
 		});
 	}
 
-	// 해상도
+	// // 해상도
 	if ($(window).height() < 739) {
 		$('.my__main2').css({
 			"height": "100%"
@@ -85,7 +86,7 @@ $(function () {
 		$('.acitive_wrap').css('margin-bottom', '65px')
 	} else {
 		$('.my__main2').css({
-			"height": "calc(100vh - 165px)",
+			"height": "calc(100dvh - 165px)",
 		});
 		$('.acitive_wrap').css('margin-bottom', '0')
 	}
@@ -97,7 +98,7 @@ $(function () {
 			$('.acitive_wrap').css('margin-bottom', '65px')
 		} else {
 			$('.my__main2').css({
-				"height": "calc(100vh - 165px)",
+				"height": "calc(100dvh - 165px)",
 			});
 			$('.acitive_wrap').css('margin-bottom', '0')
 		}
