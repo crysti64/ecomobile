@@ -82,7 +82,6 @@ $(function () {
 		$('.my__main2').css({
 			"height": "100%"
 		});
-		$('.mileage_chang').css('margin-bottom', '65px');
 	} else {
 		$('.my__main2').css({
 			"height": "calc(100vh - 90px)",
@@ -93,7 +92,6 @@ $(function () {
 			$('.my__main2').css({
 				"height": "100%"
 			});
-			$('.mileage_chang').css('margin-bottom', '65px');
 		} else {
 			$('.my__main2').css({
 				"height": "calc(100vh - 90px)",
