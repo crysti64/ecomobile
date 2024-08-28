@@ -79,28 +79,24 @@ $(function () {
 
 	// 해상도
 	if ($(window).height() < 739) {
-		$('.my__main').css({
-			"height": "auto",
-			"padding-bottom": "80px"
+		$('.my__main2').css({
+			"height": "100%"
 		});
 		$('.mileage_chang').css('margin-bottom', '65px');
 	} else {
-		$('.my__main').css({
-			"height": "calc(100vh - 166px)",
-			"padding-bottom": "65px"
+		$('.my__main2').css({
+			"height": "calc(100vh - 90px)",
 		});
 	}
 	$(window).resize(function () {
 		if ($(window).height() < 739) {
-			$('.my__main').css({
-				"height": "auto",
-				"padding-bottom": "80px"
+			$('.my__main2').css({
+				"height": "100%"
 			});
 			$('.mileage_chang').css('margin-bottom', '65px');
 		} else {
-			$('.my__main').css({
-				"height": "calc(100vh - 166px)",
-				"padding-bottom": "65px"
+			$('.my__main2').css({
+				"height": "calc(100vh - 90px)",
 			});
 		}
 	});
